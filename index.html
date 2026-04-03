@@ -1,0 +1,1580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Atendimento 24/7 para Imobiliárias | IA que Responde Leads em 2 Minutos</title>
+  <meta name="description" content="Sua imobiliária perde leads todas as noites e finais de semana. Nossa IA responde qualquer contato em até 2 minutos, qualifica o perfil e agenda a visita — sem depender do corretor estar disponível." />
+  <meta name="keywords" content="atendimento 24 horas imobiliária, automação imobiliária, IA para imobiliária, chatbot imobiliário, leads imobiliários, WhatsApp imobiliária, CRM imobiliário, Zona Sul RJ, Barra da Tijuca, Recreio, automação de atendimento" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://seudominio.com.br/atendimento-always-on-imobiliarias" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Atendimento 24/7 para Imobiliárias | IA que Responde em 2 Minutos" />
+  <meta property="og:description" content="20% dos seus leads nunca recebem resposta. Nossa IA muda isso — sem contratar mais ninguém." />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Atendimento Always-On 24/7 para Imobiliárias",
+    "description": "Automação de atendimento com IA para imobiliárias de médio padrão. Resposta em até 2 minutos, qualificação de leads e agendamento automático de visitas.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Always-On Imob"
+    },
+    "areaServed": ["Zona Sul RJ", "Barra da Tijuca", "Recreio dos Bandeirantes", "Brasil"],
+    "serviceType": "Automação de Atendimento Imobiliário"
+  }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Em quanto tempo a IA responde um lead?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Em até 2 minutos, 24 horas por dia, 7 dias por semana — incluindo finais de semana e feriados."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "A IA substitui o corretor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Não. A IA faz o primeiro atendimento, qualifica o perfil e agenda a visita. O corretor recebe apenas leads quentes, prontos para negociar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Funciona com qual CRM imobiliário?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Integramos com Jetimob, Tecimob, Imobzi, Kenlo e outros CRMs do mercado, além de WhatsApp Business API."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #0d0d0d;
+      --paper: #f5f0e8;
+      --cream: #ede8dc;
+      --accent: #c8480f;
+      --accent-dark: #9e3708;
+      --gold: #b8962e;
+      --mid: #5a5248;
+      --light-ink: #8a8070;
+      --white: #ffffff;
+      --green: #1a6b3a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background-color: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .sans { font-family: 'Syne', sans-serif; }
+
+    /* ─── NOISE TEXTURE OVERLAY ─── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.5;
+    }
+
+    /* ─── NAV ─── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background: rgba(245, 240, 232, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(13,13,13,0.08);
+    }
+
+    .nav-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--accent); }
+
+    .nav-cta {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--ink);
+      padding: 0.65rem 1.4rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--accent); }
+
+    /* ─── HERO ─── */
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-top: 80px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      right: -5%;
+      top: 10%;
+      width: 55%;
+      height: 90%;
+      background: var(--cream);
+      border-radius: 60% 0 0 60%;
+      z-index: 0;
+    }
+
+    .hero-left {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 5rem 3rem 5rem 4rem;
+    }
+
+    .hero-tag {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      display: inline-block;
+      padding: 0.35rem 0.8rem;
+      border-radius: 2px;
+      margin-bottom: 1.8rem;
+      width: fit-content;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 4.4rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 1.6rem;
+    }
+
+    h1 em {
+      font-style: normal;
+      color: var(--accent);
+      position: relative;
+    }
+
+    h1 em::after {
+      content: '';
+      position: absolute;
+      bottom: 2px; left: 0; right: 0;
+      height: 3px;
+      background: var(--accent);
+      opacity: 0.3;
+    }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--mid);
+      max-width: 480px;
+      margin-bottom: 2.5rem;
+      line-height: 1.75;
+    }
+
+    .hero-sub strong { color: var(--ink); font-weight: 600; }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: var(--accent);
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 2px solid var(--accent);
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--ink);
+      background: transparent;
+      padding: 1rem 2rem;
+      border-radius: 3px;
+      text-decoration: none;
+      border: 2px solid var(--ink);
+      transition: all 0.2s;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .btn-outline:hover { background: var(--ink); color: var(--white); }
+
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 3.5rem;
+      padding-top: 2.5rem;
+      border-top: 1px solid rgba(13,13,13,0.12);
+    }
+
+    .stat-item { display: flex; flex-direction: column; }
+    .stat-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--ink);
+      letter-spacing: -0.04em;
+      line-height: 1;
+    }
+    .stat-num span { color: var(--accent); }
+    .stat-label {
+      font-size: 0.78rem;
+      color: var(--light-ink);
+      margin-top: 0.3rem;
+      font-family: 'Syne', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .hero-right {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 3rem;
+    }
+
+    /* ─── CHAT MOCKUP ─── */
+    .chat-mockup {
+      width: 100%;
+      max-width: 360px;
+      background: var(--white);
+      border-radius: 16px;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.14), 0 4px 16px rgba(0,0,0,0.06);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .chat-header {
+      background: #075E54;
+      padding: 1rem 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .chat-avatar {
+      width: 40px; height: 40px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .chat-info { flex: 1; }
+    .chat-name { font-family: 'Syne', sans-serif; font-size: 0.9rem; font-weight: 700; color: white; }
+    .chat-status { font-size: 0.72rem; color: rgba(255,255,255,0.75); }
+
+    .chat-body { padding: 1rem; background: #ece5dd; min-height: 280px; display: flex; flex-direction: column; gap: 0.7rem; }
+
+    .msg {
+      max-width: 82%;
+      padding: 0.6rem 0.9rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      position: relative;
+    }
+
+    .msg-in {
+      background: white;
+      align-self: flex-start;
+      border-radius: 0 8px 8px 8px;
+      color: #1a1a1a;
+    }
+
+    .msg-out {
+      background: #dcf8c6;
+      align-self: flex-end;
+      border-radius: 8px 0 8px 8px;
+      color: #1a1a1a;
+    }
+
+    .msg-time {
+      font-size: 0.65rem;
+      color: #999;
+      text-align: right;
+      margin-top: 3px;
+    }
+
+    .msg-bot-tag {
+      font-size: 0.62rem;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+
+    .chat-typing {
+      background: white;
+      align-self: flex-start;
+      padding: 0.6rem 0.9rem;
+      border-radius: 0 8px 8px 8px;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+
+    .dot {
+      width: 6px; height: 6px;
+      background: #aaa;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite;
+    }
+    .dot:nth-child(2) { animation-delay: 0.15s; }
+    .dot:nth-child(3) { animation-delay: 0.3s; }
+
+    @keyframes bounce {
+      0%, 60%, 100% { transform: translateY(0); }
+      30% { transform: translateY(-4px); }
+    }
+
+    .response-badge {
+      position: absolute;
+      top: -12px; right: -12px;
+      background: var(--accent);
+      color: white;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.7rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(200,72,15,0.4);
+    }
+
+    /* ─── PAIN SECTION ─── */
+    .section { padding: 6rem 4rem; }
+
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-tag {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--light-ink);
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    .section-title em { font-style: normal; color: var(--accent); }
+
+    .section-lead {
+      font-size: 1.1rem;
+      color: var(--mid);
+      max-width: 600px;
+      line-height: 1.75;
+    }
+
+    /* ─── PAIN GRID ─── */
+    .pain-section { background: var(--ink); }
+    .pain-section .section-tag { color: rgba(255,255,255,0.4); }
+    .pain-section .section-title { color: var(--paper); }
+    .pain-section .section-title em { color: var(--gold); }
+    .pain-section .section-lead { color: rgba(245,240,232,0.65); }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5px;
+      margin-top: 3.5rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .pain-card {
+      background: #141414;
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.3s;
+    }
+
+    .pain-card:hover { background: #1c1c1c; }
+
+    .pain-card::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 3px;
+      background: var(--accent);
+    }
+
+    .pain-number {
+      font-family: 'Syne', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: rgba(200,72,15,0.12);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: -0.5rem;
+    }
+
+    .pain-stat {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .pain-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--paper);
+      margin-bottom: 0.7rem;
+    }
+
+    .pain-desc {
+      font-size: 0.88rem;
+      color: rgba(245,240,232,0.55);
+      line-height: 1.65;
+    }
+
+    .pain-quote {
+      margin-top: 3rem;
+      border-left: 3px solid var(--gold);
+      padding: 1.5rem 2rem;
+      background: rgba(184,150,46,0.06);
+    }
+
+    .pain-quote p {
+      font-size: 1.05rem;
+      color: rgba(245,240,232,0.8);
+      font-style: italic;
+      line-height: 1.75;
+    }
+
+    .pain-quote cite {
+      display: block;
+      margin-top: 0.8rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    /* ─── HOW IT WORKS ─── */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 3.5rem;
+      background: rgba(13,13,13,0.1);
+    }
+
+    .step-card {
+      background: var(--paper);
+      padding: 2rem 1.8rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .step-num {
+      font-family: 'Syne', sans-serif;
+      font-size: 4rem;
+      font-weight: 800;
+      color: rgba(200,72,15,0.08);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .step-icon {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .step-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.6rem;
+    }
+
+    .step-desc {
+      font-size: 0.85rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    .step-time {
+      margin-top: 1rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* ─── BENEFITS ─── */
+    .benefits-section { background: var(--cream); }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+
+    .benefit-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 4px;
+      border-bottom: 3px solid var(--accent);
+      box-shadow: 0 2px 16px rgba(0,0,0,0.05);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    }
+
+    .benefit-icon {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .benefit-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .benefit-desc {
+      font-size: 0.88rem;
+      color: var(--mid);
+      line-height: 1.65;
+    }
+
+    /* ─── COMPARISON TABLE ─── */
+    .comparison-wrap {
+      margin-top: 3.5rem;
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+
+    thead tr { background: var(--ink); }
+    thead th {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--paper);
+      padding: 1rem 1.2rem;
+      text-align: left;
+    }
+
+    thead th:last-child { color: var(--gold); }
+
+    tbody tr { border-bottom: 1px solid rgba(13,13,13,0.08); }
+    tbody tr:nth-child(even) { background: var(--cream); }
+    tbody tr:hover { background: rgba(200,72,15,0.04); }
+
+    tbody td {
+      padding: 0.9rem 1.2rem;
+      color: var(--mid);
+    }
+
+    tbody td:first-child { font-weight: 500; color: var(--ink); }
+    tbody td.bad { color: #c0392b; font-weight: 600; }
+    tbody td.good { color: var(--green); font-weight: 600; }
+
+    .check { color: var(--green); font-size: 1rem; }
+    .cross { color: #c0392b; font-size: 1rem; }
+
+    /* ─── TESTIMONIALS ─── */
+    .testimonials-section { background: var(--paper); }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 2rem;
+      border: 1px solid rgba(13,13,13,0.07);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '"';
+      font-family: Georgia, serif;
+      font-size: 5rem;
+      color: var(--accent);
+      opacity: 0.15;
+      line-height: 1;
+      position: absolute;
+      top: 0.5rem;
+      left: 1.2rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.92rem;
+      color: var(--mid);
+      line-height: 1.75;
+      margin-top: 1.5rem;
+    }
+
+    .testimonial-author {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .author-avatar {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--cream);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--ink);
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .author-role {
+      font-size: 0.75rem;
+      color: var(--light-ink);
+    }
+
+    /* ─── FAQ ─── */
+    .faq-section { background: var(--cream); }
+
+    .faq-list { margin-top: 3rem; max-width: 760px; }
+
+    details {
+      border-bottom: 1px solid rgba(13,13,13,0.1);
+      padding: 1.3rem 0;
+    }
+
+    details[open] summary::after { content: '−'; }
+
+    summary {
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 0.5rem;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    summary::after {
+      content: '+';
+      font-size: 1.4rem;
+      font-weight: 400;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    details p {
+      margin-top: 0.8rem;
+      font-size: 0.93rem;
+      color: var(--mid);
+      line-height: 1.75;
+      padding-right: 2rem;
+    }
+
+    /* ─── LEAD FORM ─── */
+    .form-section {
+      background: var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -200px;
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(200,72,15,0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .form-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .form-left .section-tag { color: rgba(255,255,255,0.35); }
+    .form-left .section-title { color: var(--paper); }
+    .form-left .section-title em { color: var(--accent); }
+    .form-left .section-lead { color: rgba(245,240,232,0.55); }
+
+    .form-promises {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .promise-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+    }
+
+    .promise-icon {
+      width: 28px; height: 28px;
+      background: rgba(200,72,15,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .promise-text {
+      font-size: 0.9rem;
+      color: rgba(245,240,232,0.7);
+      line-height: 1.6;
+    }
+
+    .promise-text strong { color: var(--paper); }
+
+    .lead-form {
+      background: var(--paper);
+      border-radius: 6px;
+      padding: 2.5rem;
+    }
+
+    .form-title {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+
+    .form-subtitle {
+      font-size: 0.85rem;
+      color: var(--mid);
+      margin-bottom: 1.8rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid rgba(13,13,13,0.15);
+      border-radius: 3px;
+      background: var(--white);
+      font-family: 'Lora', serif;
+      font-size: 0.9rem;
+      color: var(--ink);
+      outline: none;
+      transition: border-color 0.2s;
+      appearance: none;
+    }
+
+    input:focus, select:focus { border-color: var(--accent); }
+
+    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; padding-right: 2.5rem; }
+
+    .form-btn {
+      width: 100%;
+      padding: 1.1rem;
+      background: var(--accent);
+      color: var(--white);
+      font-family: 'Syne', sans-serif;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+      margin-top: 0.5rem;
+    }
+
+    .form-btn:hover { background: var(--accent-dark); transform: translateY(-1px); }
+
+    .form-privacy {
+      font-size: 0.73rem;
+      color: var(--light-ink);
+      text-align: center;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: #0a0a0a;
+      padding: 2.5rem 4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1rem;
+      color: var(--paper);
+      text-decoration: none;
+    }
+
+    .footer-logo span { color: var(--accent); }
+
+    .footer-copy {
+      font-size: 0.78rem;
+      color: rgba(245,240,232,0.35);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .footer-links a {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(245,240,232,0.4);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--paper); }
+
+    /* ─── STICKY CTA MOBILE ─── */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      padding: 1rem 1.5rem;
+      background: var(--ink);
+      z-index: 200;
+      box-shadow: 0 -4px 24px rgba(0,0,0,0.2);
+    }
+
+    .sticky-cta a {
+      display: block;
+      text-align: center;
+      background: var(--accent);
+      color: white;
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.95rem;
+      border-radius: 3px;
+      text-decoration: none;
+    }
+
+    /* ─── ANIMATIONS ─── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-left > * {
+      animation: fadeUp 0.7s ease both;
+    }
+    .hero-left > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-left > *:nth-child(2) { animation-delay: 0.2s; }
+    .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
+    .hero-left > *:nth-child(4) { animation-delay: 0.4s; }
+    .hero-left > *:nth-child(5) { animation-delay: 0.5s; }
+
+    .chat-mockup {
+      animation: fadeUp 0.8s 0.4s ease both;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      nav { padding: 1rem 1.5rem; }
+      .section { padding: 4rem 1.5rem; }
+
+      .hero {
+        grid-template-columns: 1fr;
+        min-height: auto;
+      }
+      .hero::after { display: none; }
+      .hero-left { padding: 5rem 1.5rem 2rem; }
+      .hero-right { padding: 1.5rem; justify-content: flex-start; }
+      .hero-stats { gap: 1.5rem; }
+
+      .pain-grid { grid-template-columns: 1fr; }
+      .steps-grid { grid-template-columns: 1fr 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .form-layout { grid-template-columns: 1fr; gap: 3rem; }
+
+      footer { flex-direction: column; align-items: flex-start; padding: 2rem 1.5rem; }
+      .footer-links { gap: 1.2rem; flex-wrap: wrap; }
+
+      .sticky-cta { display: block; }
+      body { padding-bottom: 80px; }
+    }
+
+    @media (max-width: 600px) {
+      .steps-grid { grid-template-columns: 1fr; }
+      .hero-actions { flex-direction: column; }
+      .btn-primary, .btn-outline { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">Always<span>On</span> Imob</a>
+  <a href="#formulario" class="nav-cta">Quero Demonstração</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">Automação de Atendimento para Imobiliárias</div>
+    <h1>Sua imobiliária perde leads<br />toda <em>noite e fim</em><br />de semana</h1>
+    <p class="hero-sub">
+      O cliente vê o imóvel no ZAP às 22h de sábado. Manda mensagem.
+      Você responde na segunda-feira. <strong>Ele já fechou com o concorrente.</strong>
+      Nossa IA responde em até 2 minutos — 24 horas por dia.
+    </p>
+    <div class="hero-actions">
+      <a href="#formulario" class="btn-primary">Quero ver como funciona →</a>
+      <a href="#como-funciona" class="btn-outline">Ver demonstração</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">6<span>h</span></div>
+        <div class="stat-label">Tempo médio<br/>de resposta</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">20<span>%</span></div>
+        <div class="stat-label">Leads sem<br/>nenhuma resposta</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100<span>×</span></div>
+        <div class="stat-label">Mais conversão em<br/>menos de 5 min</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="chat-mockup">
+      <div class="response-badge">⚡ Respondido em 1min 43s</div>
+      <div class="chat-header">
+        <div class="chat-avatar">🏠</div>
+        <div class="chat-info">
+          <div class="chat-name">Assistente Imobiliária</div>
+          <div class="chat-status">● Online agora • 24 horas por dia</div>
+        </div>
+      </div>
+      <div class="chat-body">
+        <div class="msg msg-in">
+          <div class="msg-bot-tag">Cliente</div>
+          Oi, vi o apartamento de 3 quartos no Leblon no VivaReal. Ainda tá disponível?
+          <div class="msg-time">22:47</div>
+        </div>
+        <div class="msg msg-out">
+          <div class="msg-bot-tag">IA Always-On</div>
+          Olá! Sim, está disponível 🙌 R$ 1,2M, 3 quartos, 2 vagas. Quer que eu agende uma visita para este fim de semana?
+          <div class="msg-time">22:49</div>
+        </div>
+        <div class="msg msg-in">
+          Que horas tem sábado?
+          <div class="msg-time">22:51</div>
+        </div>
+        <div class="msg msg-out">
+          Tenho 10h e 14h disponíveis no sábado. Qual prefere? Já reservo no calendário do corretor! 📅
+          <div class="msg-time">22:51</div>
+        </div>
+        <div class="chat-typing">
+          <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOR E DADOS -->
+<section class="section pain-section" id="dados">
+  <div class="section-inner">
+    <div class="section-tag">O Diagnóstico Brutal</div>
+    <h2 class="section-title">Os leads existem.<br/>O problema é <em>outro</em>.</h2>
+    <p class="section-lead">Você investe em portais. Os leads chegam. Mas o atendimento afunda a conversão antes mesmo de o corretor saber que alguém entrou em contato.</p>
+
+    <div class="pain-grid">
+      <div class="pain-card">
+        <div class="pain-number">01</div>
+        <div class="pain-stat">6h a 24h</div>
+        <div class="pain-title">Tempo médio de resposta ao primeiro contato</div>
+        <div class="pain-desc">Imobiliárias na Zona Sul, Barra e Recreio demoram, em média, entre 4 e 24 horas para responder. Em mercados competitivos, um lead não respondido em 5 minutos já começa a esfriar.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-number">02</div>
+        <div class="pain-stat">20% dos leads</div>
+        <div class="pain-title">Jamais recebem qualquer resposta</div>
+        <div class="pain-desc">1 em cada 5 pessoas que entrou em contato com a sua imobiliária nunca recebeu retorno. Cada um desses é uma comissão que foi para o concorrente — ou para o silêncio.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-number">03</div>
+        <div class="pain-stat">41% de desistência</div>
+        <div class="pain-title">Dos atendimentos em locação são abandonados</div>
+        <div class="pain-desc">Quase metade dos potenciais locatários desiste antes de fechar — não porque o imóvel não prestava, mas porque o atendimento foi lento demais para segurar o interesse inicial.</div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-number">04</div>
+        <div class="pain-stat">1,5%</div>
+        <div class="pain-title">Taxa mediana de conversão de leads no setor</div>
+        <div class="pain-desc">O segmento imobiliário tem a menor taxa de conversão entre 17 setores analisados. Os 25% de melhor desempenho chegam a 6,1% — a diferença é, em grande parte, a velocidade de atendimento.</div>
+      </div>
+    </div>
+
+    <div class="pain-quote">
+      <p>"Mandei mensagem pelo portal no sábado à tarde. Só me responderam na terça-feira, quando eu já tinha visitado outro imóvel e fechado o negócio."</p>
+      <cite>— Relato real de cliente, Google Maps — Imobiliária Zona Sul RJ</cite>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="section" id="como-funciona">
+  <div class="section-inner">
+    <div class="section-tag">Como Funciona</div>
+    <h2 class="section-title">Do primeiro "oi" à<br/>visita agendada — <em>automático</em></h2>
+    <p class="section-lead">Quatro etapas que acontecem enquanto você dorme, assiste ao jogo ou está em outra visita.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <span class="step-icon">📲</span>
+        <div class="step-title">Lead chega via qualquer canal</div>
+        <div class="step-desc">WhatsApp, ZAP, VivaReal, Instagram, site — em qualquer horário, qualquer dia.</div>
+        <div class="step-time">0 segundos de espera</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <span class="step-icon">🤖</span>
+        <div class="step-title">IA responde e qualifica</div>
+        <div class="step-desc">Resposta em até 2 minutos. Descobre perfil, faixa de preço, bairro preferido, urgência e tipo de imóvel.</div>
+        <div class="step-time">Em até 2 minutos</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <span class="step-icon">📅</span>
+        <div class="step-title">Visita agendada no calendário</div>
+        <div class="step-desc">A IA já agenda a visita diretamente no calendário do corretor certo — com base no perfil e no imóvel de interesse.</div>
+        <div class="step-time">Automático, 24/7</div>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <span class="step-icon">🔥</span>
+        <div class="step-title">Corretor recebe o lead quente</div>
+        <div class="step-desc">Você só entra em cena quando o lead já está qualificado, interessado e com visita marcada. Zero tempo desperdiçado.</div>
+        <div class="step-time">Lead pronto para fechar</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="section benefits-section" id="beneficios">
+  <div class="section-inner">
+    <div class="section-tag">Benefícios</div>
+    <h2 class="section-title">O que muda na sua<br/><em>operação real</em></h2>
+    <p class="section-lead">Não é sobre chatbot. É sobre transformar o custo do seu anúncio em visitas e propostas — de verdade.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <span class="benefit-icon">⚡</span>
+        <div class="benefit-title">Resposta em até 2 minutos, sempre</div>
+        <div class="benefit-desc">Responder em menos de 5 minutos aumenta em até 100× a chance de conversão. Sua imobiliária faz isso agora em qualquer horário, qualquer dia.</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🎯</span>
+        <div class="benefit-title">Triagem inteligente de leads</div>
+        <div class="benefit-desc">A IA separa leads frios de quentes, identifica urgência, faixa de preço e bairro. Seu corretor foca só em quem realmente quer comprar ou alugar.</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📲</span>
+        <div class="benefit-title">Integração nativa com WhatsApp</div>
+        <div class="benefit-desc">WhatsApp é o principal canal de decisão imobiliária no Brasil. A IA opera via API oficial, sem risco de banimento da linha.</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🔄</span>
+        <div class="benefit-title">Nutrição de leads antigos</div>
+        <div class="benefit-desc">Reativa automaticamente leads de 30, 60 ou 90 dias atrás com imóveis similares ao perfil — sem trabalho manual da equipe.</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">📊</span>
+        <div class="benefit-title">Dashboard em tempo real</div>
+        <div class="benefit-desc">Saiba exatamente quantos leads chegaram, qual o tempo de resposta, quantas visitas foram agendadas e qual corretor fechou mais.</div>
+      </div>
+      <div class="benefit-card">
+        <span class="benefit-icon">🔗</span>
+        <div class="benefit-title">Integra com seu CRM atual</div>
+        <div class="benefit-desc">Funciona com Jetimob, Tecimob, Imobzi, Kenlo e outros. Não precisa mudar o que já usa — só potencializar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section class="section" id="comparativo">
+  <div class="section-inner">
+    <div class="section-tag">Comparativo</div>
+    <h2 class="section-title">Sem IA vs.<br/><em>Com Always-On Imob</em></h2>
+    <p class="section-lead">Os números que mostram por que a velocidade de atendimento é a diferença entre fechar ou perder.</p>
+
+    <div class="comparison-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Situação</th>
+            <th>Sem automação (hoje)</th>
+            <th>Com Always-On Imob</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tempo de resposta ao 1º contato</td>
+            <td class="bad">6h a 24h em média</td>
+            <td class="good">Até 2 minutos, sempre</td>
+          </tr>
+          <tr>
+            <td>Atendimento fora do expediente</td>
+            <td class="bad"><span class="cross">✗</span> Nenhum</td>
+            <td class="good"><span class="check">✓</span> 24h por dia, 7 dias por semana</td>
+          </tr>
+          <tr>
+            <td>Leads sem resposta</td>
+            <td class="bad">~20% nunca recebem retorno</td>
+            <td class="good">0% — todos são respondidos</td>
+          </tr>
+          <tr>
+            <td>Qualificação de leads</td>
+            <td class="bad">Manual, inconsistente</td>
+            <td class="good">Automática e padronizada</td>
+          </tr>
+          <tr>
+            <td>Agendamento de visitas</td>
+            <td class="bad">Só em horário comercial</td>
+            <td class="good">Qualquer hora, qualquer dia</td>
+          </tr>
+          <tr>
+            <td>Follow-up após visita</td>
+            <td class="bad">Depende do corretor se lembrar</td>
+            <td class="good">Automático, com timing certo</td>
+          </tr>
+          <tr>
+            <td>Reativação de leads antigos</td>
+            <td class="bad">Não acontece</td>
+            <td class="good">Automático em 30, 60 e 90 dias</td>
+          </tr>
+          <tr>
+            <td>Visibilidade do funil</td>
+            <td class="bad">Planilhas e achismos</td>
+            <td class="good">Dashboard em tempo real</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section class="section testimonials-section" id="depoimentos">
+  <div class="section-inner">
+    <div class="section-tag">Resultados Reais</div>
+    <h2 class="section-title">O que imobiliárias<br/>dizem depois de <em>60 dias</em></h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Antes eu acordava na segunda e tinha 12 mensagens sem resposta do fim de semana. Hoje a IA já qualificou todos, agendou 4 visitas e eu só precisei confirmar. É surreal."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">RC</div>
+          <div>
+            <div class="author-name">Ricardo C.</div>
+            <div class="author-role">Diretor Comercial · Imobiliária Barra da Tijuca</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Nossa taxa de visitas agendadas subiu 73% em dois meses. O que mudou? Passamos a responder todo mundo em menos de 3 minutos. O cliente não tem tempo de ir buscar concorrente."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">FM</div>
+          <div>
+            <div class="author-name">Fernanda M.</div>
+            <div class="author-role">Proprietária · Imobiliária Zona Sul RJ</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-text">"Tinha medo de parecer impessoal. Mas os clientes adoraram. Muitos disseram que foi a imobiliária mais rápida que já contataram. E no Recreio, rapidez é tudo."</div>
+        <div class="testimonial-author">
+          <div class="author-avatar">TL</div>
+          <div>
+            <div class="author-name">Thiago L.</div>
+            <div class="author-role">Corretor Sênior · Recreio dos Bandeirantes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="section-inner">
+    <div class="section-tag">Perguntas Frequentes</div>
+    <h2 class="section-title">Dúvidas que todo<br/>gestor tem <em>antes</em></h2>
+
+    <div class="faq-list">
+      <details>
+        <summary>A IA substitui o corretor?</summary>
+        <p>Não. A IA faz o trabalho que nenhum corretor consegue fazer: responder 24 horas, todos os dias, em segundos. O corretor entra em cena quando o lead já está qualificado, interessado e com visita agendada — no momento certo, com informação certa. Seu corretor fecha mais passando menos tempo em atendimento inicial.</p>
+      </details>
+      <details>
+        <summary>E se o cliente fizer uma pergunta complexa que a IA não sabe responder?</summary>
+        <p>A IA é treinada para reconhecer quando a conversa precisa de um humano. Ela sinaliza o corretor responsável em tempo real via WhatsApp ou CRM, com o histórico completo da conversa — o cliente não precisa repetir nada.</p>
+      </details>
+      <details>
+        <summary>Funciona com meu CRM atual?</summary>
+        <p>Sim. Integramos com Jetimob, Tecimob, Imobzi, Kenlo, ImoFlow e outros CRMs imobiliários do mercado. Também conectamos com WhatsApp Business API, ZAP Imóveis, VivaReal e Instagram. A implantação não exige troca de sistema.</p>
+      </details>
+      <details>
+        <summary>Quanto tempo leva para implementar?</summary>
+        <p>A implantação padrão leva de 7 a 14 dias. Isso inclui treinamento da IA com os imóveis do seu portfólio, integração com CRM e WhatsApp, fluxos de qualificação personalizados e treinamento da equipe. Na segunda semana, a IA já está atendendo.</p>
+      </details>
+      <details>
+        <summary>A IA funciona para qualquer cidade, ou só para o Rio?</summary>
+        <p>Funciona para qualquer cidade do Brasil. Começamos com foco na Zona Sul, Barra e Recreio do RJ por conhecer profundamente esses mercados, mas a solução é configurável para qualquer praça — Niterói, São Paulo, Florianópolis, Curitiba, Salvador e outras.</p>
+      </details>
+      <details>
+        <summary>E a LGPD? Como os dados dos clientes são tratados?</summary>
+        <p>Toda a operação segue as diretrizes da LGPD. Os dados são armazenados em servidores seguros no Brasil, com criptografia em trânsito e em repouso. Fornecemos modelo de política de privacidade e termos de uso adaptados para imobiliárias.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO DE CAPTURA -->
+<section class="section form-section" id="formulario">
+  <div class="section-inner">
+    <div class="form-layout">
+      <div class="form-left">
+        <div class="section-tag">Demonstração Gratuita</div>
+        <h2 class="section-title">Veja a IA atendendo<br/>sua imobiliária <em>ao vivo</em></h2>
+        <p class="section-lead">30 minutos. Sem compromisso. Você sai sabendo exatamente o que muda e quanto você pode parar de perder.</p>
+
+        <div class="form-promises">
+          <div class="promise-item">
+            <div class="promise-icon">✓</div>
+            <div class="promise-text"><strong>Demonstração ao vivo</strong> com os imóveis do seu portfólio</div>
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">✓</div>
+            <div class="promise-text"><strong>Diagnóstico gratuito</strong> de quantos leads você está perdendo hoje</div>
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">✓</div>
+            <div class="promise-text"><strong>Proposta personalizada</strong> para o tamanho da sua operação</div>
+          </div>
+          <div class="promise-item">
+            <div class="promise-icon">✓</div>
+            <div class="promise-text"><strong>Sem pressão</strong> — você decide se faz sentido para você</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="lead-form">
+          <div class="form-title">Agendar demonstração gratuita</div>
+          <div class="form-subtitle">Resposta em até 1 hora em horário comercial</div>
+
+          <div class="form-group">
+            <label for="nome">Seu nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Como prefere ser chamado?" />
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp com DDD</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 99999-9999" />
+          </div>
+
+          <div class="form-group">
+            <label for="imobiliaria">Nome da imobiliária</label>
+            <input type="text" id="imobiliaria" name="imobiliaria" placeholder="Nome da sua imobiliária" />
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">Cidade / Região</label>
+            <select id="cidade" name="cidade">
+              <option value="" disabled selected>Selecione sua região</option>
+              <option>Zona Sul — RJ</option>
+              <option>Barra da Tijuca — RJ</option>
+              <option>Recreio dos Bandeirantes — RJ</option>
+              <option>Niterói / São Gonçalo — RJ</option>
+              <option>Norte / Oeste RJ</option>
+              <option>São Paulo — SP</option>
+              <option>Outra cidade</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="corretores">Número de corretores</label>
+            <select id="corretores" name="corretores">
+              <option value="" disabled selected>Quantos corretores na equipe?</option>
+              <option>1 a 5 corretores</option>
+              <option>6 a 15 corretores</option>
+              <option>16 a 30 corretores</option>
+              <option>Mais de 30 corretores</option>
+            </select>
+          </div>
+
+          <button class="form-btn" onclick="handleSubmit(event)">
+            Quero minha demonstração gratuita →
+          </button>
+
+          <div class="form-privacy">
+            🔒 Seus dados são protegidos pela LGPD e nunca serão compartilhados.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="#" class="footer-logo">Always<span>On</span> Imob</a>
+  <div class="footer-links">
+    <a href="#dados">Dados do mercado</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#faq">FAQ</a>
+    <a href="#formulario">Contato</a>
+  </div>
+  <div class="footer-copy">© 2025 AlwaysOn Imob · Todos os direitos reservados</div>
+</footer>
+
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="#formulario">Quero demonstração gratuita →</a>
+</div>
+
+<script>
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+
+  // Form submission handler
+  function handleSubmit(e) {
+    e.preventDefault();
+    const nome = document.getElementById('nome').value.trim();
+    const whatsapp = document.getElementById('whatsapp').value.trim();
+    const imobiliaria = document.getElementById('imobiliaria').value.trim();
+
+    if (!nome || !whatsapp || !imobiliaria) {
+      alert('Por favor, preencha nome, WhatsApp e nome da imobiliária para continuar.');
+      return;
+    }
+
+    const btn = e.target;
+    btn.textContent = '✓ Solicitação enviada! Falaremos em breve.';
+    btn.style.background = '#1a6b3a';
+    btn.disabled = true;
+
+    // Aqui você integraria com seu backend, CRM ou Webhook (ex: Make, n8n, Zapier)
+    // fetch('/api/leads', { method: 'POST', body: JSON.stringify({nome, whatsapp, imobiliaria}) })
+  }
+
+  // WhatsApp mask
+  const whatsInput = document.getElementById('whatsapp');
+  whatsInput.addEventListener('input', function() {
+    let v = this.value.replace(/\D/g, '');
+    if (v.length > 11) v = v.slice(0, 11);
+    if (v.length > 7) v = `(${v.slice(0,2)}) ${v.slice(2,7)}-${v.slice(7)}`;
+    else if (v.length > 2) v = `(${v.slice(0,2)}) ${v.slice(2)}`;
+    else if (v.length > 0) v = `(${v}`;
+    this.value = v;
+  });
+
+  // Intersection Observer for subtle fade-in on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.pain-card, .step-card, .benefit-card, .testimonial-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(16px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
