@@ -147,7 +147,7 @@
       text-transform: uppercase;
       color: var(--white);
       background: var(--ink);
-      padding: 0.6rem 1.2rem;
+      padding: 0.65rem 1.2rem;
       border-radius: 2px;
       text-decoration: none;
       transition: background 0.2s;
@@ -323,7 +323,7 @@
       width: 100%;
       max-width: 360px;
       background: var(--white);
-      border-radius: 16px;
+      border-radius: 14px;
       box-shadow: 0 24px 80px rgba(0,0,0,0.14), 0 4px 16px rgba(0,0,0,0.06);
       overflow: hidden;
       position: relative;
@@ -331,7 +331,7 @@
 
     .chat-header {
       background: #075E54;
-      padding: 1rem 1.2rem;
+      padding: 2rem 1.2rem;
       display: flex;
       align-items: center;
       gap: 0.75rem;
@@ -484,14 +484,14 @@
     }
 
     .pain-card {
-      background: #423217;
+      background: #141414;
       padding: 2.5rem;
       position: relative;
       overflow: hidden;
       transition: background 0.3s;
     }
 
-    .pain-card:hover { background: #5a4521; }
+    .pain-card:hover { background: #1c1c1c; }
 
     .pain-card::before {
       content: '';
@@ -505,7 +505,7 @@
       font-family: 'Fira', sans-serif;
       font-size: 3.5rem;
       font-weight: 800;
-      color: rgb(231, 224, 201);
+      color: rgba(200,72,15,0.12);
       line-height: 1;
       letter-spacing: -0.05em;
       margin-bottom: -0.5rem;
@@ -580,7 +580,7 @@
       font-family: 'Fira', sans-serif;
       font-size: 4rem;
       font-weight: 800;
-      color: rgba(200, 70, 15, 0.722);
+      color: rgba(200,72,15,0.08);
       line-height: 1;
       letter-spacing: -0.05em;
       margin-bottom: 1rem;
@@ -858,7 +858,7 @@
 
     .promise-icon {
       width: 28px; height: 28px;
-      background: rgba(201, 114, 76, 0.621);
+      background: rgba(200,72,15,0.2);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -1088,7 +1088,6 @@
 </nav>
 
 <!-- HERO -->
-<main>
 <section class="hero">
   <div class="hero-left">
     <div class="hero-tag">Automação de Atendimento para Imobiliárias</div>
@@ -1100,7 +1099,7 @@
     </p>
     <div class="hero-actions">
       <a href="#formulario" class="btn-primary">Quero ver como funciona →</a>
-      <a href="#como-funciona" class="btn-outline">Ver demonstração</a>
+      <button onclick="openChat()" class="btn-outline">🤖 Falar com a IA agora</button>
     </div>
     <div class="hero-stats">
       <div class="stat-item">
@@ -1153,7 +1152,6 @@
     </div>
   </div>
 </section>
-</main>
 
 <!-- DOR E DADOS -->
 <section class="section pain-section" id="dados">
@@ -1202,6 +1200,9 @@
     <div class="section-tag">Como Funciona</div>
     <h2 class="section-title">Do primeiro "oi" à<br/>visita agendada — <em>automático</em></h2>
     <p class="section-lead">Quatro etapas que acontecem enquanto você dorme, assiste ao jogo ou está em outra visita.</p>
+    <div style="margin-top:1.5rem;">
+      <button onclick="openChat()" class="btn-primary" style="font-size:0.85rem;">🤖 Testar a IA ao vivo agora</button>
+    </div>
 
     <div class="steps-grid">
       <div class="step-card">
@@ -1419,90 +1420,129 @@
 
 <!-- FORMULÁRIO DE CAPTURA -->
 <section class="section form-section" id="formulario">
-  <div class="section-inner">
-    <div class="form-layout">
-      <div class="form-left">
-        <div class="section-tag">Demonstração Gratuita</div>
-        <h2 class="section-title">Veja a IA atendendo<br/>sua imobiliária <em>ao vivo</em></h2>
-        <p class="section-lead">30 minutos. Sem compromisso. Você sai sabendo exatamente o que muda e quanto você pode parar de perder.</p>
-
-        <div class="form-promises">
-          <div class="promise-item">
-            <div class="promise-icon">✓</div>
-            <div class="promise-text"><strong>Demonstração ao vivo</strong> com os imóveis do seu portfólio</div>
-          </div>
-          <div class="promise-item">
-            <div class="promise-icon">✓</div>
-            <div class="promise-text"><strong>Diagnóstico gratuito</strong> de quantos leads você está perdendo hoje</div>
-          </div>
-          <div class="promise-item">
-            <div class="promise-icon">✓</div>
-            <div class="promise-text"><strong>Proposta personalizada</strong> para o tamanho da sua operação</div>
-          </div>
-          <div class="promise-item">
-            <div class="promise-icon">✓</div>
-            <div class="promise-text"><strong>Sem pressão</strong> — você decide se faz sentido para você</div>
+    <div class="section-inner">
+      <div class="form-layout">
+        <div class="form-left">
+          <div class="section-tag">Demonstração Gratuita</div>
+          <h2 class="section-title">Veja a IA atendendo<br/>sua imobiliária <em>ao vivo</em></h2>
+          <p class="section-lead">30 minutos. Sem compromisso. Você sai sabendo exatamente o que muda e quanto você pode parar de perder.</p>
+  
+          <div class="form-promises">
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Demonstração ao vivo</strong> com os imóveis do seu portfólio</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Diagnóstico gratuito</strong> de quantos leads você está perdendo hoje</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Proposta personalizada</strong> para o tamanho da sua operação</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Sem pressão</strong> — você decide se faz sentido para você</div>
+            </div>
           </div>
         </div>
+  
+        <div>
+            <!-- FORMULÁRIO -->
+  <script id="form-script-tag-23810847" src="https://marcobrj.systeme.io/public/remote/page/4042867434eac8c16adfce7c93ae20a394212351.js"></script>
+
+        </div>
       </div>
-
-      <div>
-        <div class="lead-form">
-          <div class="form-title">Agendar demonstração gratuita</div>
-          <div class="form-subtitle">Resposta em até 1 hora em horário comercial</div>
-
-          <div class="form-group">
-            <label for="nome">Seu nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Como prefere ser chamado?" />
+    </div>
+  </section>
+  
+  <!--
+  <section class="section form-section" id="formulario">
+    <div class="section-inner">
+      <div class="form-layout">
+        <div class="form-left">
+          <div class="section-tag">Demonstração Gratuita</div>
+          <h2 class="section-title">Veja a IA atendendo<br/>sua imobiliária <em>ao vivo</em></h2>
+          <p class="section-lead">30 minutos. Sem compromisso. Você sai sabendo exatamente o que muda e quanto você pode parar de perder.</p>
+  
+          <div class="form-promises">
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Demonstração ao vivo</strong> com os imóveis do seu portfólio</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Diagnóstico gratuito</strong> de quantos leads você está perdendo hoje</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Proposta personalizada</strong> para o tamanho da sua operação</div>
+            </div>
+            <div class="promise-item">
+              <div class="promise-icon">✓</div>
+              <div class="promise-text"><strong>Sem pressão</strong> — você decide se faz sentido para você</div>
+            </div>
           </div>
-
-          <div class="form-group">
-            <label for="whatsapp">WhatsApp com DDD</label>
-            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 99999-9999" />
-          </div>
-
-          <div class="form-group">
-            <label for="imobiliaria">Nome da imobiliária</label>
-            <input type="text" id="imobiliaria" name="imobiliaria" placeholder="Nome da sua imobiliária" />
-          </div>
-
-          <div class="form-group">
-            <label for="cidade">Cidade / Região</label>
-            <select id="cidade" name="cidade">
-              <option value="" disabled selected>Selecione sua região</option>
-              <option>Zona Sul — RJ</option>
-              <option>Barra da Tijuca — RJ</option>
-              <option>Recreio dos Bandeirantes — RJ</option>
-              <option>Niterói / São Gonçalo — RJ</option>
-              <option>Norte / Oeste RJ</option>
-              <option>São Paulo — SP</option>
-              <option>Outra cidade</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="corretores">Número de corretores</label>
-            <select id="corretores" name="corretores">
-              <option value="" disabled selected>Quantos corretores na equipe?</option>
-              <option>1 a 5 corretores</option>
-              <option>6 a 15 corretores</option>
-              <option>16 a 30 corretores</option>
-              <option>Mais de 30 corretores</option>
-            </select>
-          </div>
-
-          <button class="form-btn" onclick="handleSubmit(event)">
-            Quero minha demonstração gratuita →
-          </button>
-
-          <div class="form-privacy">
-            🔒 Seus dados são protegidos pela LGPD e nunca serão compartilhados.
+        </div>
+  
+        <div>
+          <div class="lead-form">
+            <div class="form-title">Agendar demonstração gratuita</div>
+            <div class="form-subtitle">Resposta em até 1 hora em horário comercial</div>
+  
+            <div class="form-group">
+              <label for="nome">Seu nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Como prefere ser chamado?" />
+            </div>
+  
+            <div class="form-group">
+              <label for="whatsapp">WhatsApp com DDD</label>
+              <input type="tel" id="whatsapp" name="whatsapp" placeholder="(21) 99999-9999" />
+            </div>
+  
+            <div class="form-group">
+              <label for="imobiliaria">Nome da imobiliária</label>
+              <input type="text" id="imobiliaria" name="imobiliaria" placeholder="Nome da sua imobiliária" />
+            </div>
+  
+            <div class="form-group">
+              <label for="cidade">Cidade / Região</label>
+              <select id="cidade" name="cidade">
+                <option value="" disabled selected>Selecione sua região</option>
+                <option>Zona Sul — RJ</option>
+                <option>Barra da Tijuca — RJ</option>
+                <option>Recreio dos Bandeirantes — RJ</option>
+                <option>Niterói / São Gonçalo — RJ</option>
+                <option>Norte / Oeste RJ</option>
+                <option>São Paulo — SP</option>
+                <option>Outra cidade</option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <label for="corretores">Número de corretores</label>
+              <select id="corretores" name="corretores">
+                <option value="" disabled selected>Quantos corretores na equipe?</option>
+                <option>1 a 5 corretores</option>
+                <option>6 a 15 corretores</option>
+                <option>16 a 30 corretores</option>
+                <option>Mais de 30 corretores</option>
+              </select>
+            </div>
+  
+            <button class="form-btn" onclick="handleSubmit(event)">
+              Quero minha demonstração gratuita →
+            </button>
+  
+            <div class="form-privacy">
+              🔒 Seus dados são protegidos pela LGPD e nunca serão compartilhados.
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
+-->
 
 <!-- FOOTER -->
 <footer>
@@ -1521,8 +1561,174 @@
   <a href="#formulario">Quero demonstração gratuita →</a>
 </div>
 
+<!-- ─── MODAL CHAT IA ─── -->
+<div id="chat-overlay" role="dialog" aria-modal="true" aria-label="Demonstração ao vivo da IA" style="
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  background: rgba(13,13,13,0.75);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+">
+  <div style="
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    height: min(680px, 90vh);
+    background: #f5f0e8;
+    border-radius: 12px;
+    box-shadow: 0 32px 80px rgba(0,0,0,0.35), 0 4px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: modalIn 0.3s cubic-bezier(0.34,1.56,0.64,1) both;
+  ">
+    <!-- Cabeçalho do modal -->
+    <div style="
+      background: #075E54;
+      padding: 1rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-shrink: 0;
+    ">
+      <div style="
+        width: 36px; height: 36px;
+        background: #c8480f;
+        border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 1rem;
+        flex-shrink: 0;
+      ">🤖</div>
+
+      <div style="flex: 1;">
+        <div style="font-family:'Fira',sans-serif; font-weight:700; font-size:0.9rem; color:#f5f0e8;">
+          Agente IA — AlwaysOn Imob
+        </div>
+        <div style="font-size:0.72rem; color:rgba(245,240,232,0.55); display:flex; align-items:center; gap:5px;">
+          <span style="width:7px;height:7px;background:#25D366;border-radius:50%;display:inline-block;"></span>
+          Demonstração ao vivo · Responde em segundos
+        </div>
+      </div>
+      <button
+        onclick="closeChat()"
+        aria-label="Fechar demonstração"
+        style="
+          background: rgba(255,255,255,0.08);
+          border: none;
+          color: rgba(245,240,232,0.6);
+          font-size: 1.2rem;
+          width: 32px; height: 32px;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex; align-items: center; justify-content: center;
+          transition: background 0.2s;
+          line-height: 1;
+          flex-shrink: 0;
+        "
+        onmouseover="this.style.background='rgba(255,255,255,0.16)'"
+        onmouseout="this.style.background='rgba(255,255,255,0.08)'"
+      >✕</button>
+    </div>
+
+    <!-- Aviso contextual -->
+    <div style="
+      background: rgba(200,72,15,0.08);
+      border-bottom: 1px solid rgba(200,72,15,0.15);
+      padding: 0.6rem 1.2rem;
+      font-family: 'Fira', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: #c8480f;
+      letter-spacing: 0.04em;
+      text-align: center;
+      flex-shrink: 0;
+    ">
+      ⚡ Você está conversando com a IA real — sem scripts, sem humano
+    </div>
+
+    <!-- iFrame do n8n -->
+    <iframe
+      id="chat-iframe"
+      src=""
+      data-src="https://n8n.ikhono.com.br/webhook/d47ec158-5d93-4257-b393-5cfa17c35f2d/chat"
+      title="Demonstração ao vivo do agente de IA AlwaysOn Imob"
+      allow="microphone"
+      style="
+        flex: 1;
+        border: none;
+        width: 100%;
+        background: #fff;
+      "
+    ></iframe>
+
+    <!-- Rodapé do modal -->
+    <div style="
+      padding: 0.65rem 1.2rem;
+      background: #0d0d0d;
+      text-align: center;
+      font-family: 'Fira', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      color: rgba(245,240,232,0.3);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      flex-shrink: 0;
+    ">
+      AlwaysOn Imob · Powered by MaxSyn Assessoria
+    </div>
+  </div>
+</div>
+
+<style>
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.93) translateY(16px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+  }
+  #chat-overlay.open { display: flex !important; }
+</style>
+
 <script>
-  // Smooth scroll for anchor links
+  // ─── MODAL CHAT ───
+  function openChat() {
+    const overlay = document.getElementById('chat-overlay');
+    const iframe  = document.getElementById('chat-iframe');
+
+    // Carrega o src apenas na primeira abertura (lazy load)
+    if (!iframe.src || iframe.src === window.location.href) {
+      iframe.src = iframe.dataset.src;
+    }
+
+    overlay.classList.add('open');
+    overlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+
+    // Foco acessível no modal
+    overlay.focus && overlay.focus();
+  }
+
+  function closeChat() {
+    const overlay = document.getElementById('chat-overlay');
+    overlay.classList.remove('open');
+    overlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  // Fechar ao clicar fora do card
+  document.getElementById('chat-overlay').addEventListener('click', function(e) {
+    if (e.target === this) closeChat();
+  });
+
+  // Fechar com ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeChat();
+  });
+
+
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
